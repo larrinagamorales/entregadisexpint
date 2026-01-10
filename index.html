@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Alejandra Larri</title>
+  <meta name="description" content="Portfolio personal" />
+
+  
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">[Alejandra Larri]</a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+
+
+
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-inner">
+        <h1 class="site-title">Hola! Soy Alejandra Larri</h1>
+        <p class="lead">Diseñadora de producto.</p>
+        <img src="./img/foto1TITULO.JPG" alt="Foto de Alejandra" class="hero-img">
+
+      </div>
+    </section>
+
+
+
+
+    <section id="about" class="about reveal">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>Soy Alejandra Larrinaga, estudiante de cuarto de Diseño de Producto en UDIT. Me apasiona entender cómo las personas se relacionan con los objetos y transformar esa intuición en soluciones funcionales, estéticas y con intención. Me considero una persona curiosa, resolutiva y muy detallista, siempre en busca de nuevas técnicas, materiales y formas de construir.
+
+          <p></p>Me motiva trabajar con conceptos potentes y llevarlos a resultados tangibles, desde la exploración visual hasta el prototipo. Disfruto especialmente de los procesos manuales y del trabajo en fablab, donde puedo experimentar, fallar rápido y volver a empezar hasta encontrar algo que realmente funcione. Además, me gusta enfocar mis proyectos desde perspectivas críticas y personales, creando piezas con narrativa propia.</p>
+      </div>
+    </section>
+
+<img src="./img/foto1SOBREMI.png" alt="Foto de Alejandra" class="about-img">
+
+
+
+
+    <section id="projects" class="projects reveal">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+
+
+
+          <!-- Proyecto 1: Bubb -->
+          <article class="project-card" data-project="Bubb">
+            <div class="project-visual">
+              <img src="./img/foto1BUBB1.JPG" alt="Bubb — preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Bubb</h3>
+              <p class="meta">Lámpara experimental que combina rigidez y flexibilidad en un mismo cuerpo.</p>
+              <div class="project-actions">
+                <button class="btn js-open-gallery" data-gallery="bubb">Abrir galería</button>
+              </div>
+            </div>
+          </article>
+
+
+
+          <!-- Proyecto 2: Camp & Grill -->
+          <article class="project-card" data-project="campgrill">
+            <div class="project-visual">
+              <img src="./img/foto2CAMP&GRILL1.JPG" alt="Camp & Grill — preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Camp & Grill</h3>
+              <p class="meta">Diseño y prototipado de una barbacoa portátil para camping en el fablab de la Universidad UDIT.</p>
+              <div class="project-actions">
+                <button class="btn js-open-gallery" data-gallery="campgrill">Abrir galería</button>
+              </div>
+            </div>
+          </article>
+
+
+
+          <!-- Proyecto 3: Tabhaus -->
+          <article class="project-card" data-project="tabhaus">
+            <div class="project-visual">
+              <img src="./img/foto3TABHAUS7.JPG" alt="Tabhaus — preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Tabhaus</h3>
+              <p class="meta">Taburete modular inspirado en los principios y colores de la Bauhaus.</p>
+              <div class="project-actions">
+                <button class="btn js-open-gallery" data-gallery="tabhaus">Abrir galería</button>
+              </div>
+            </div>
+          </article>
+
+
+
+
+          <!-- Proyecto 4: Tower Fridge -->
+          <article class="project-card" data-project="towerfridge">
+            <div class="project-visual">
+              <img src="./img/foto4FRIDGE1.png" alt="Tower Fridge — preview" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Tower Fridge</h3>
+              <p class="meta">Un frigorífico eco-friendly diseñado para reducir el desperdicio de comida y eliminar la necesidad de un sistema eléctrico.</p>
+              <div class="project-actions">
+                <button class="btn js-open-gallery" data-gallery="towerfridge">Abrir galería</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="contact" class="contact reveal">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Correo: sandrulilarrinaga@gmail.com</a></p>
+        <p>Linkedin: Alejandra larrinaga Morales</p>
+        <p>Instagram: @san.larri</p>
+        <p>Num: +34 633 70 32 15</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> [Alejandra Larrinaga Morales] — Mi Portfolio</p>
+    </div>
+  </footer>
+
+
+  
+  
+  <!-- DEL JS) -->
+  <div id="galleryModal" class="modal" aria-hidden="true" role="dialog" aria-label="Galería de proyecto">
+    <button class="modal-close" aria-label="Cerrar galería">&times;</button>
+    <div class="modal-content">
+
+
+        
+  <!-- DE LOS PROYECTO -->
+  <div class="gallery-header" id="galleryHeader"></div>
+
+  <div class="carousel" id="modalCarousel">
+    <button class="carousel-btn prev" aria-label="Anterior">◀</button>
+    <div class="carousel-track"></div>
+    <button class="carousel-btn next" aria-label="Siguiente">▶</button>
+  </div>
+
+  <div class="carousel-controls">
+    <button id="carouselPlay" class="btn btn-small">Play</button>
+    <button id="carouselPause" class="btn btn-small btn-ghost">Pausa</button>
+  </div>
+</div>
+
+      <div class="carousel" id="modalCarousel">
+        <button class="carousel-btn prev" aria-label="Anterior">◀</button>
+        <div class="carousel-track"></div>
+        <button class="carousel-btn next" aria-label="Siguiente">▶</button>
+      </div>
+     
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
